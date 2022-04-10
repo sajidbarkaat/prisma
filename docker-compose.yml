@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  msb-rest-apis:
+    container_name: msb-rest-apis
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - db-server
+    env_file:
+      - .env
+    networks:
+      - msbbackend
+  db-server:
+    image: postgres
+    container_name: db-server
+    restart: always
+    ports:
+      - 5432:5432
+    env_file:
+      - .env
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    networks:
+      - msbbackend
+networks:
+  name: msbbackend
+volumes:
+  postgres:
+    name: msb-db

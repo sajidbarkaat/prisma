@@ -70,6 +70,15 @@ $ npx prisma migrate deploy
 $ prisma generate
 ```
 
+## Docker
+
+Some useful links for dockerization
+[With PRISMA and PostgreSQL](https://notiz.dev/blog/dockerizing-nestjs-with-prisma-and-postgresql).
+[With PRISMA and PostgreSQL - 2](https://blog.devgenius.io/database-with-prisma-orm-docker-and-postgres-nestjs-with-passport-02-773092e382c).
+[NestJS](https://dev.to/erezhod/setting-up-a-nestjs-project-with-docker-for-back-end-development-30lg).
+[NestJS with PRISMA](https://blog.devgenius.io/database-with-prisma-orm-docker-and-postgres-nestjs-with-passport-02-773092e382c).
+[Hot Reload and Debugging](https://www.youtube.com/watch?v=CLqlCkvAKKQ)
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
